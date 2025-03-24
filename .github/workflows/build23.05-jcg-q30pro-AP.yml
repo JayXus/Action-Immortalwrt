@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build immortalwrt23.05 JCG-Q30Pro AP
+name: Build immortalwrt23.05 AP JCG-Q30Pro
 
 on:
   repository_dispatch:
