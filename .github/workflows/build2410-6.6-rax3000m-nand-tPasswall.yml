@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build imm-24.10-6.6 RAX3000M-nand Latest Passwall
+name: Build imm-24.10-6.6 RAX3000M-nand Passwall
 
 on:
   repository_dispatch:
