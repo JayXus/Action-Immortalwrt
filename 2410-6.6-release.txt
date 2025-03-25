@@ -1,5 +1,5 @@
 https://github.com/immortalwrt/immortalwrt源码编译路由器固件。
-openwrt-24.10分支主路由版。
-含最新passwall源码编译模块。还有ddns、zerotier模块。
+openwrt-24.10分支,Kernel 6.6,开源无线驱动
+含Passwall、ddns、zerotier模块。
 默认IP地址：192.168.6.1
 密码：
