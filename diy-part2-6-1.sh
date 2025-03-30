@@ -26,6 +26,6 @@ sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 sed -i '$a\\sleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
 
 #增加连接数
-sed -i 'net.netfilter.nf_conntrack_buckets=65536' package/kernel/linux/files/sysctl-nf-conntrack.conf
-sed -i 'net.netfilter.nf_conntrack_expect_max=16384' package/kernel/linux/files/sysctl-nf-conntrack.conf
-sed -i 'net.netfilter.nf_conntrack_max=100000' package/kernel/linux/files/sysctl-nf-conntrack.conf
+echo 'net.netfilter.nf_conntrack_buckets=65536' >>package/kernel/linux/files/sysctl-nf-conntrack.conf
+echo 'net.netfilter.nf_conntrack_expect_max=16384' >>package/kernel/linux/files/sysctl-nf-conntrack.conf
+echo 'net.netfilter.nf_conntrack_max=100000' >>package/kernel/linux/files/sysctl-nf-conntrack.conf
