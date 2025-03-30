@@ -17,10 +17,15 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-sed -i 's/ImmortalWrt/ImmortalWrt-Hanwckf/g' package/base-files/files/bin/config_generate
+#sed -i 's/ImmortalWrt/ImmortalWrt-Hanwckf/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 
 # Modify ppp-down, add sleep 3. my source code is change, no need this
 sed -i '$a\\sleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
+
+#增加连接数
+sed -i 'net.netfilter.nf_conntrack_buckets=65536' package/kernel/linux/files/sysctl-nf-conntrack.conf
+sed -i 'net.netfilter.nf_conntrack_expect_max=16384' package/kernel/linux/files/sysctl-nf-conntrack.conf
+sed -i 'net.netfilter.nf_conntrack_max=100000' package/kernel/linux/files/sysctl-nf-conntrack.conf
