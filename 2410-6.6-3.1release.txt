@@ -1,0 +1,5 @@
+https://github.com/immortalwrt/immortalwrt 源码
+openwrt-24.10分支,Kernel 6.6,开源无线驱动
+含Passwall、ddns、zerotier模块。
+默认IP地址：192.168.3.1
+密码：
