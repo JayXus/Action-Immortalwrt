@@ -20,7 +20,7 @@ sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generat
 #sed -i 's/ImmortalWrt/ImmortalWrt-Hanwckf/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
-sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-pw-24.10/1' include/image.mk
+sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-24.10.1/1' include/image.mk
 
 # Modify ppp-down, add sleep 3. my source code is change, no need this
 sed -i '$a\\sleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
