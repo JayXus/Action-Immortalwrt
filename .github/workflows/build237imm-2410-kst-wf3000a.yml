@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build 237i-2410-kst-wf3000a
+name: Build 237-2410-kst-wf3000a
 
 on:
   repository_dispatch:
