@@ -11,7 +11,7 @@ JCG Q30 PRO极简AP固件。
 
 
 passwall最新源码网址：
-[https://github.com/xiaorouji/openwrt-passwall](https://github.com/Openwrt-Passwall/openwrt-passwall)
+https://github.com/Openwrt-Passwall/openwrt-passwall
 
 
 ssr plus最新源码网址：
