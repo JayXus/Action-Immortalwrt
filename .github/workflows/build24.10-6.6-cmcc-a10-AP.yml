@@ -75,6 +75,10 @@ jobs:
       run: |
         cd openwrt && ./scripts/feeds install -a
 
+        # Fix A10 to use nand_do_upgrade
+        sed -i '/^[[:space:]]*cmcc,a10-ubootmod|\\$/d' target/linux/mediatek/filogic/base-files/lib/upgrade/platform.sh
+        sed -i '/^[[:space:]]*jcg,q30-pro|\\$/a\	cmcc,a10-ubootmod|\\' target/linux/mediatek/filogic/base-files/lib/upgrade/platform.sh
+
 
     - name: Load custom configuration
       run: |
